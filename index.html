@@ -11,42 +11,42 @@
 </head>
 
 <body>
+    <div id="timer">Time Left: </div>
+    <div id ="high-score">High Scores</div>
     <main class="text-center">
         <h1>Coding Quiz Challenge</h1>
         <p> Try to Answer the following code-related questions within the time limit.</p> <br>
         <p> Keep in mind that incorrect answers will be penalize your scoretime by 10 seconds</p>
         <br>
         <br>
-        <br>
-            <button type="submit">Start Quiz</button>
+            <button id="start-button"><a>Start Quiz</a></button>
         </main>
+<section>
 
-        //Questions:
-        1. Choose the option that is NOT a Javascript Data Type:
-            1. Number
-            2. Object
-            3. String
-            4. Booyah
 
-        2. A Javascript ____________ is a block of code designed to perform a particular task:
-            1. Argument
-            2. Initialization
-            3. Function 
-            4. Agreement  
 
-       3. Choose True or False for the following statement: Objects are variables too.    
-            1. True
-            2. False 
 
-        4. Which is NOT an example of and HTML Event:
-            1. An HTML web page has finished loading
-            2. An HTML input field was changed
-            3. An HTML button was clicked 
-            4. An HTML image has a responsive design 
 
-       5.  Choose True or False for the following statement: A Javascript String can not use double quotes.
-            1. True
-            2. False    
+
+
+</section>
+
+        <div id="quiz"></div>
+            <div id="question"></div>
+
+            <div id="qImg"></div>
+
+            <div id="choices">
+
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+
+            </div>
+
+          
 
     <script src="./Assets/script.js"></script> 
 
