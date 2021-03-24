@@ -17,6 +17,8 @@
   h1,
   h2 {
     margin: 20px;
+    font-weight: bolder;
+    font-size: xx-large;
   }
   
   main {
@@ -101,7 +103,7 @@
     height: 40px;
     width: 120px;
     background-color: #6b24dd;
-    color: #FDF8F5;
+    color: #FDF8F5;cd cd 
   }
    
   /* Class Selectors */
