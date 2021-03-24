@@ -57,12 +57,12 @@
     color: #FDF8F5;    
   }
    
-  section {
+  /* section {
     margin-bottom: 0;
     padding: 20px 10px 40px 10px;
     border-top: 3px solid #a5e8eb;
     background-color:  #bfd6e8;
-  }
+  } */
 
   #start-button {
     background-color: hotpink;
