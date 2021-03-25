@@ -25,6 +25,9 @@ var interval = setInterval(function(){
 
 startButtonEl.addEventListener ("click", function() {
   document.getElementById("main").style.display = "none";
+  showQuestions(); 
+  quiz.style.display = "block";
+  showProgress();
 
 });
  
@@ -62,25 +65,24 @@ var theQuiz = [
 ];
 
 function showQuestions(){
-i = 0;
-q4 = questions.length;
-  optionA.innerHTML = i.choiceA;
 
-  optionB.innerHTML = i.choiceB;
+  q = theQuiz[0]
 
-  optionC.innerHTML = i.choiceC;
+  question.innerHTML = "<p>"+ q.question +"</p>";
+  optionA.innerHTML = q.optionA;
 
-  optionD.innerHTML = i.choiceD;
+  optionB.innerHTML = q.optionB;
 
+  optionC.innerHTML = q.optionC;
 
+  optionD.innerHTML = q.optionD;
+
+}
   function showProgress(){
 
     for( i= [0]; i < [4]; i ++){
 
-        quiz.innerHTML = i[0];
+        theQuiz.innerHTML = i[0];
 
     }
-
-}
-start.addEventListener("click",startQuiz);
-}
+  }
