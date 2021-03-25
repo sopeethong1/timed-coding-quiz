@@ -9,6 +9,7 @@ var optionB =  document.getElementById("B");
 var optionC =  document.getElementById("C");
 var optionD =  document.getElementById("D");
 
+document.getElementById("options").style.display= "none";
 
 startButtonEl.addEventListener ("click", function() {
 var count = 40;
@@ -26,7 +27,7 @@ var interval = setInterval(function(){
 startButtonEl.addEventListener ("click", function() {
   document.getElementById("main").style.display = "none";
   showQuestions(); 
-  quiz.style.display = "block";
+  document.getElementById("options").style.display= "block";
   showProgress();
 
 });
@@ -64,11 +65,15 @@ var theQuiz = [
   },
 ];
 
+var q4 = question.length -1;
+var currentQ = 0;
+
 function showQuestions(){
 
-  q = theQuiz[0]
+  q = theQuiz[currentQ]
 
   question.innerHTML = "<p>"+ q.question +"</p>";
+
   optionA.innerHTML = q.optionA;
 
   optionB.innerHTML = q.optionB;
