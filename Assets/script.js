@@ -40,27 +40,47 @@ var theQuiz = [
   },
 
   {
-    question:
-      "Choose True or False for the following statement: A Javascript String can not use double quotes.",
-    options: ["True", "False"],
-    answer: 2,
+    question: "Choose True or False for the following statement: A Javascript String can not use double quotes.",
+    optionA: "True",
+    optionB: "False",
+    Correct: "False",
   },
 
-  {
-    question:
-      "A Javascript ____________ is a block of code designed to perform a particular task:",
-    options: ["Argument", "Initialization", "Function", "Agreement"],
-    answer: 3,
+  {  question: "A Javascript ____________ is a block of code designed to perform a particular task:",
+    optionA: "Argument",
+    optionB: "Initialization",
+    optionC: "Function",
+    optionD:  "Agreement",
+    Correct: "Function",
   },
 
-  {
-    question:
-      "Choose True or False for the following statement: Objects are variables too.",
-    options: ["True", "False"],
-    answer: 1,
+  { question: "Choose True or False for the following statement: Objects are variables too.",
+    optionA: "True",
+    optionB: "False",
+    Correct: "True",
   },
 ];
+
+function showQuestions(){
+i = 0;
+q4 = questions.length;
+  optionA.innerHTML = i.choiceA;
+
+  optionB.innerHTML = i.choiceB;
+
+  optionC.innerHTML = i.choiceC;
+
+  optionD.innerHTML = i.choiceD;
+
+
+  function showProgress(){
+
+    for( i= [0]; i < [4]; i ++){
+
+        quiz.innerHTML = i[0];
+
+    }
+
 }
-
-
-  
+start.addEventListener("click",startQuiz);
+}
