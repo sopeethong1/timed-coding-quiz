@@ -4,6 +4,7 @@ var highScoresEL = document.getElementById("high-score");
 var mainE1 = document.getElementById("main");
 
 
+
 startButtonEl.addEventListener ("click", function() {
 var count = 40;
 var interval = setInterval(function(){
@@ -16,13 +17,11 @@ var interval = setInterval(function(){
 }, 1000);
 });
 
-// startButtonEl.addEventListener ("click", function() {
 
-
-
-// }
-
-
+startButtonEl.addEventListener ("click", function() {
+  document.getElementById("main").style.display = "none";
+ theQuiz.style.display = "block";
+});
  
 
 
@@ -55,8 +54,20 @@ var theQuiz = [
   },
 ];
 
+// startButtonEl.click(function() {
+
+ 
+
+// }
+
+// function generateQuestions() {
+// var currentQuestion = 0;
+// question.innerHTML = "<p>" currentQuestion + "</p>";
+// choice
 
 
-theQuiz.splice((Math.floor(Math.random()*(theQuiz.length))),1);
-console.log(theQuiz);
+
+
+
+// } 
   
