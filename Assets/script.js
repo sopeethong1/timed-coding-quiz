@@ -4,6 +4,7 @@ var highScoresEL = document.getElementById("high-score");
 var mainE1 = document.getElementById("main");
 
 
+startButtonEl.addEventListener ("click", function() {
 var count = 40;
 var interval = setInterval(function(){
   document.getElementById('countdown').innerHTML= "Time Remaining: " + count;
@@ -13,8 +14,13 @@ var interval = setInterval(function(){
     document.getElementById('countdown').innerHTML='Times Up!';
   }
 }, 1000);
+});
+
+// startButtonEl.addEventListener ("click", function() {
 
 
+
+// }
 
 
  
@@ -49,5 +55,8 @@ var theQuiz = [
   },
 ];
 
+
+
+theQuiz.splice((Math.floor(Math.random()*(theQuiz.length))),1);
+console.log(theQuiz);
   
-// startButtonEl.addEventListener("click", startGame); 
