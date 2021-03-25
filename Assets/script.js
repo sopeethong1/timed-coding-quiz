@@ -20,7 +20,6 @@ var interval = setInterval(function(){
 
 startButtonEl.addEventListener ("click", function() {
   document.getElementById("main").style.display = "none";
- theQuiz.style.display = "block";
 });
  
 
