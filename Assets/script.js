@@ -2,7 +2,12 @@ var timeEl = document.getElementById("countdown");
 var startButtonEl = document.getElementById("start-button");
 var highScoresEL = document.getElementById("high-score"); 
 var mainE1 = document.getElementById("main");
-
+var quiz = document.getElementById("quiz");
+var question = document.getElementById("question");
+var optionA =  document.getElementById("A");
+var optionB =  document.getElementById("B");
+var optionC =  document.getElementById("C");
+var optionD =  document.getElementById("D");
 
 
 startButtonEl.addEventListener ("click", function() {
@@ -20,15 +25,18 @@ var interval = setInterval(function(){
 
 startButtonEl.addEventListener ("click", function() {
   document.getElementById("main").style.display = "none";
+
 });
  
-
-
+  
 var theQuiz = [
   {
     question: "Choose the option that is NOT a Javascript Data Type:",
-    options: ["Number", "Object", "String", "Booyah"],
-    answer: 4,
+    optionA: "Number",
+    optionB: "Object",
+    optionC: "String",
+    optionD:  "Booyah",
+    Correct: "Booyah",
   },
 
   {
@@ -52,21 +60,7 @@ var theQuiz = [
     answer: 1,
   },
 ];
-
-// startButtonEl.click(function() {
-
- 
-
-// }
-
-// function generateQuestions() {
-// var currentQuestion = 0;
-// question.innerHTML = "<p>" currentQuestion + "</p>";
-// choice
+}
 
 
-
-
-
-// } 
   
