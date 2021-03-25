@@ -79,6 +79,10 @@
     width: 100px;
   }
    
+  #timer {
+    float: right;
+    margin-right: 50px;
+  }
   /* Class Selectors */
   .text-center {
     text-align: center;
@@ -87,4 +91,5 @@
   .text-right {
     text-align: right;
   }
+  
   
